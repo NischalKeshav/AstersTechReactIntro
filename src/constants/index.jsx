@@ -1,3 +1,5 @@
 export const navLists = [
-  "Components", "Props", "Hooks"
+  { label: "Home", path: "/" },
+  { label: "Exercises", path: "/Exercises" },
+  { label: "Hooks", path: "/Hooks" },
 ];

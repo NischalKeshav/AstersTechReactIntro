@@ -1,7 +1,8 @@
-// HeroPage.jsx
 import React from "react";
-import { useTheme } from "./ThemeContext"; // import your context
-
+import { useTheme } from "./ThemeContext";
+import CodeBlockDemo from "./CodeBlockDemo";
+import { Code } from "react-code-blocks";
+import { TButton } from "./ThemeSwitching";
 const HeroPage = (props) => {
   const { theme } = useTheme();
 
@@ -28,8 +29,9 @@ const HeroPage = (props) => {
             : "bg-white text-indigo-600 hover:bg-gray-200"}
         `}
       >
-        Start Learning
+        <TButton />
       </a>
+      
     </section>
   );
 };
